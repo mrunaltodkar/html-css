@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Account</title>
+</head>
+<body background="bank_card.jpg">  
+  
+    
+        <form action="action_page.php">            
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="jumbotron text-center">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">index</a></li>
+                <li><a href="withdraw.html">withdraw</a></li>
+                <li><a href="deposit.html">deposit</a></li>
+                <li><a href="fund_transfer.html">fund_transfer</a></li>
+                <li><a href="Check_balance.html">Check_balance</a></li>
+                <li><a href="Account_details.html">Account_details</a></li>
+              </ul>
+            </div>
+          </nav>
+
+                      <div class="container" align="center">
+                  <h1>Create New Account</h1>
+                  <p>Please fill in this form to create an account.</p>
+                  <br>
+                  
+                  <label for="Customer_name"><b>Customer Name</b></label><br>
+                  <input type="text" placeholder="Enter Customer Name" name="Customer_name" required>
+                  </br><br>
+                  
+                  <label for="Customer_contact"><b>Customer Contact</b></label><br>
+                  <input type="tel" placeholder="Enter Customer contact" name="Customer_contact" pattern=".{10,}" maxlength="10" required>
+                  </br><br>
+
+                  <label for="email"><b>Customer Email</b></label><br>
+                  <input type="email" placeholder="Enter Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" required> 
+                  </br><br>
+    
+                  <label for="Customer_DOB"><b>Customer DOB</b></label><br>
+                  <input type="date" name="bday" required>
+                  </br><br>
+
+                  <label for="Customer_Address"><b>Customer Address</b></label><br>
+                  <input type="text" placeholder="Enter Customer Address" name="Customer_Address" required>
+                  </br><br>
+              
+                  <label for="Customer_city"><b>City</b></label><br>
+                  <input type="text" placeholder="Enter Customer City" name="Customer_City" required>                 
+                  </br><br>
+              
+                  <label for="Customer_state"><b>State</b></label><br>
+                  <input type="text" placeholder="Enter Customer State" name="Customer_State" required>
+                  </br><br>
+
+                  <label for="Customer_postal"><b>Postal</b></label><br>
+                  <input type="number" placeholder="Enter Customer Postal" name="Customer_postal" pattern=".{6,}" maxlength="6" required>
+                  </br><br>
+                  
+                  <label for="Customer_gender"><b>Gender</b></label>
+                  </br> 
+                  <form>
+                        <input type="radio" name="gender" value="male" checked> Male<br>
+                        <input type="radio" name="gender" value="female"> Female<br>
+                        <input type="radio" name="gender" value="other"> Other
+                      </form>
+                    </br>
+
+                <label for="Customer_account"><b>Customer Account</b></label>
+                <form >
+                    <select name="account">
+                      <option value="savings">Savings</option>
+                      <option value="current">Current</option>
+                      </select>
+                    </form>
+                   <br><br>
+                    <input type="submit" value="Submit">
+                  </form>
+                  
+
+              </form>
+              
+             
+</body>
+</html>

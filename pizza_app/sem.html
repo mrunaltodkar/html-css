@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+  ul {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                  overflow: hidden;
+                  background-color: #333;
+                }
+                
+                li {
+                  float: right;
+                }
+                
+                li a {
+                  display: inline-block;
+                  color: white;
+                  text-align: center;
+                  padding: 14px 16px;
+                  text-decoration: none;
+                }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(240, 238, 160);
+}
+
+/* Style the header */
+header {
+  background-color: rgb(240, 238, 160);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 70%;
+  height: 400px; /* only for demonstration, should be removed */
+  background: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 30%;
+  background-color: #eb1212;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(190, 188, 212);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(domino.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+</style>
+</head>
+<body>
+    <ul class="nav navbar-nav">
+        <li class="active">Home</li>
+        <li class="active">About</li>
+        <li><a href="withdraw.html">withdraw</a></li>
+        <li><a href="deposit.html">deposit</a></li>
+        <li><a href="Check_balance.html">Check_balance</a></li>
+        <li><a href="Account_details.html">Account_details</a></li>
+      </ul>
+        <div class="container">
+
+<header>
+        <div class="jumbotron jumbotron-fluid" align="center">
+              
+                <h1 style="color:rgb(50, 5, 255);">New York's Best Pizza...</h1 style>
+                
+</header>
+
+<section>
+  <nav>
+   <h1>Welcome to Joe's pizza co.</h1>
+   <p>We provide </p>
+         
+    </nav>
+  
+  <article>
+      <div align="center">
+    <h1>Special OFFER!!!</h1>
+    <p>20 % off on buying two pan pizzas!!!</p>
+    <p>Buy i get 1 get one pizza off on chicken pepporoni pizza...</p>
+    <p>Deal of the week: with every spa package at Anne’s, get a haircut on us. Offer ends 12/31. Reserve your spot now.</p>
+      </div> 
+</article>
+</section>
+
+</div>
+</body>
+</html>
